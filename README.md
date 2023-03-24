@@ -4,7 +4,6 @@
     <repositories>
         <repository>
             <id>swagger-demo-mvn-git</id>
-            <!--将"zhengjiaao"改为 你的github用户名-->
             <url>https://raw.github.com/grace788/swagger-demo-mvn/main</url>
             <snapshots>
                 <enabled>true</enabled>
@@ -24,4 +23,15 @@
     <dependencyManagement>
 ```   
 
+```
+repositories {
+    maven {
+        url 'https://raw.github.com/grace788/swagger-demo-mvn/main'
+    }
+}
+
+dependencies {
+    implementation 'io.swagger:swagger-java-client:1.0.0'
+}
+```
         
